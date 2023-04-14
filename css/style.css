@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(243, 245, 252, 1);
+}
+
+/*CONTERNEDOR PRINCIPAL*/
+.container_principal {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2rem;
+}
+
+/*Primer lado*/
+.container_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.container_btn {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-encript {
+    background: rgba(10, 56, 113, 1);
+    width: 9rem;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btn-encript:hover {
+    background: rgb(16, 85, 168);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-descript {
+    background-color: rgba(243, 245, 252, 1);
+    color: rgba(10, 56, 113, 1);
+    width: 9rem;
+    border-radius: 10px;
+}
+
+.btn-descript:hover {
+    background-color: rgb(193, 193, 193);
+    cursor: pointer;
+}
+
+.text_area {
+    height: 60%;
+    font-size: 40px;
+    width: 100%;
+    resize: none;
+    border: none;
+}
+
+/*OTro lado*/
+.container_solution {
+    display: flex;
+    flex-direction: column;
+    border: rgba(243, 245, 252, 1) solid 1px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.342);
+}
+
+.text_area2 {
+    height: 80%;
+    font-size: 30px;
+    width: 100%;
+    resize: none;
+    border: none;
+    background-color: #ff;
+}
+
+.btn-copi {
+    background-color: rgba(243, 245, 252, 1);
+    color: rgba(10, 56, 113, 1);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-copi:hover {
+    background-color: rgb(193, 193, 193);
+    cursor: pointer;
+
+}
+
+
+
+/*Tablet View*/
+@media screen and (max-width:800px) {
+    .container_solution_img {
+        display: none;
+    }
+
+    .container_principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_content {
+        marign: 3em;
+    }
+
+    .container_btn {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .text_area {
+        height: 7em;
+        width: 20em;
+    }
+
+    .container_solution {
+        display: flex;
+        margin: 2em;
+        width: 75%;
+        justify-content: center;
+    }
+
+}
+
+/*smartPhone view*/
+@media screen and (max-width:390px) {
+    .container_solution_img {
+        display: none;
+    }
+
+    .container_principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 2em;
+    }
+
+    .container_solution {
+        display: flex;
+        width: 18em;
+        justify-content: center;
+        justify-content: flex-end;
+    }
+
+    .text_area {
+        font-size: 20px;
+        height: 7em;
+        width: auto;
+    }
+}
