@@ -15,7 +15,6 @@ function encriptarCode(text_area){
 }
 
 function encriptar(){
-    img.style.display="none";
     resultado.innerHTML+=encriptarCode(text_area.value);
     resultado.style.height="60%";
 
@@ -25,7 +24,6 @@ function descript_codig(text_area){
     return  text_area.replace(/enter/g,"e").replace(/imes/g,"i").replace(/ai/g,"a").replace(/ober/g,"o").replace(/ufat/g,"u");
 }
 function Decodificar(){
-    img.style.display="none";
     resultado.innerHTML="";
     resultado.style.height="60%";
     resultado.innerHTML+=descript_codig(text_area.value);

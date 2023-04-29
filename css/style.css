@@ -10,6 +10,7 @@
     justify-content: space-evenly;
     margin: auto;
     padding: 2rem;
+    width: 90%;
 }
 
 /*Primer lado*/
@@ -37,6 +38,7 @@
     background: rgb(16, 85, 168);
     border-radius: 10px;
     cursor: pointer;
+    transform: scale(1.19); 
 }
 
 .btn-descript {
@@ -49,6 +51,7 @@
 .btn-descript:hover {
     background-color: rgb(193, 193, 193);
     cursor: pointer;
+    transform: scale(1.19); 
 }
 
 .text_area {
@@ -59,7 +62,7 @@
     border: none;
 }
 
-/*OTro lado*/
+/*Otro lado*/
 .container_solution {
     display: flex;
     flex-direction: column;
